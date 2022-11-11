@@ -1,0 +1,836 @@
+########################### My part ########################
+#include<Windows.h>
+#include<GL\glut.h>
+void init()
+{
+    // Set display window color to as glClearColor(R,G,B,Alpha)
+    glClearColor(0.1, 0.1, 0.1, 0.0);
+    glMatrixMode(GL_PROJECTION);
+    gluOrtho2D(0.0, 800, 0.0, 600);
+}
+void home()
+{
+    //Roof
+    glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(0.2, 0.1, 0.0);
+    glBegin(GL_POLYGON);
+    glVertex2i(200, 500);
+    glVertex2i(600, 500);
+    glVertex2i(700, 350);
+    glVertex2i(300, 350);
+    glEnd();
+    // Top of Front Wall
+    glColor3f(0.3, 0.1, 0.0);
+    glBegin(GL_TRIANGLES);
+    glVertex2i(200, 500);
+    glVertex2i(100, 350);
+    glVertex2i(300, 350);
+    glEnd();
+    // Front Wall
+    glColor3f(0.3, 0.1, 0.1);
+    glBegin(GL_POLYGON);
+    glVertex2i(100, 350);
+    glVertex2i(300, 350);
+    glVertex2i(300, 100);
+    glVertex2i(100, 100);
+    glEnd();
+    // Front Door
+    glColor3f(0.2, 0.1, 0.0);
+    glBegin(GL_POLYGON);
+    glVertex2i(150, 250);
+    glVertex2i(250, 250);
+    glVertex2i(250, 100);
+    glVertex2i(150, 100);
+    glEnd();
+
+    // Front Door Lock
+    glColor3f(0.0, 0.0, 0.0);
+    glPointSize(15);
+    glBegin(GL_POINTS);
+    glVertex2i(170, 170);
+    glEnd();
+
+    //side Wall
+    glColor3f(0.3, 0.1, 0.0);
+    glBegin(GL_POLYGON);
+    glVertex2i(300, 350);
+    glVertex2i(700, 350);
+    glVertex2i(700, 100);
+    glVertex2i(300, 100);
+    glEnd();
+    // window one
+    glColor3f(0.1, 0.1, 0.1);
+    glBegin(GL_POLYGON);
+    glVertex2i(330, 320);
+    glVertex2i(450, 320);
+    glVertex2i(450, 230);
+    glVertex2i(330, 230);
+    glEnd();
+    // line of window one
+    glColor3f(0.1, 0.2, 0.1);
+    glLineWidth(5);
+    glBegin(GL_LINES);
+    glVertex2i(330, 273);
+    glVertex2i(450,273);
+    glEnd();
+    // window two
+    glColor3f(0.1, 0.1, 0.1);
+    glBegin(GL_POLYGON);
+    glVertex2i(530, 320);
+    glVertex2i(650, 320);
+    glVertex2i(650, 230);
+    glVertex2i(530, 230);
+    glEnd();
+    // lines of window two
+    glColor3f(0.1, 0.2, 0.1);
+    glLineWidth(5);
+    glBegin(GL_LINES);
+    glVertex2i(530, 273);
+    glVertex2i(650, 273);
+    glEnd();
+
+    // Entrance Path
+    glColor3f(0.2, 0.1, 0.0);
+    glLineWidth(3);
+    glBegin(GL_POLYGON);
+    glVertex2i(150, 100);
+    glVertex2i(250, 100);
+    glVertex2i(210, 0);
+    glVertex2i(40, 0);
+    glEnd();
+    glFlush();
+}
+int main(int argc, char ** argv)
+{
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    glutInitWindowPosition(100, 100);
+    glutInitWindowSize(800, 600);
+    glutCreateWindow("2D House in OpenGL ");
+    init();
+    glutDisplayFunc(home);
+    glutMainLoop();
+}
+
+############################# sample of my work ############################
+
+
+#include<Windows.h>       // for MS Windows
+#include<GL\glut.h>       // GLUT, include glu.h and gl.h
+//Note: GLglut.h path depending on the system in use
+void init()
+{
+    // Set display window color to as glClearColor(R,G,B,Alpha)
+    glClearColor(0.5, 0.9, 0.4, 0.0);
+    // Set projection parameters.
+    glMatrixMode(GL_PROJECTION);
+    // Set 2D Transformation as gluOrtho2D(Min Width, Max Width, Min Height, Max Height)
+    gluOrtho2D(0.0, 800, 0.0, 600);
+}
+void home()
+{
+    //Roof
+    glClear(GL_COLOR_BUFFER_BIT);     // Clear display window
+    // Set line segment color as glColor3f(R,G,B)
+    glColor3f(0.3, 0.5, 0.8);
+    glBegin(GL_POLYGON);
+    glVertex2i(200, 500);
+    glVertex2i(600, 500);
+    glVertex2i(700, 350);
+    glVertex2i(300, 350);
+    glEnd();
+    // Top of Front Wall
+    glColor3f(0.1, 0.5, 0.0);
+    glBegin(GL_TRIANGLES);
+    glVertex2i(200, 500);
+    glVertex2i(100, 350);
+    glVertex2i(300, 350);
+    glEnd();
+    // Front Wall
+    glColor3f(0.7, 0.2, 0.3);
+    glBegin(GL_POLYGON);
+    glVertex2i(100, 350);
+    glVertex2i(300, 350);
+    glVertex2i(300, 100);
+    glVertex2i(100, 100);
+    glEnd();
+    // Front Door
+    glColor3f(0.7, 0.2, 0.9);
+    glBegin(GL_POLYGON);
+    glVertex2i(150, 250);
+    glVertex2i(250, 250);
+    glVertex2i(250, 100);
+    glVertex2i(150, 100);
+    glEnd();
+
+    // Front Door Lock
+    glColor3f(0.3, 0.7, 0.9);
+    glPointSize(15);
+    glBegin(GL_POINTS);
+    glVertex2i(170, 170);
+    glEnd();
+
+    //side Wall
+    glColor3f(0.1, 0.2, 0.3);
+    glBegin(GL_POLYGON);
+    glVertex2i(300, 350);
+    glVertex2i(700, 350);
+    glVertex2i(700, 100);
+    glVertex2i(300, 100);
+    glEnd();
+    // window one
+    glColor3f(0.2, 0.4, 0.3);
+    glBegin(GL_POLYGON);
+    glVertex2i(330, 320);
+    glVertex2i(450, 320);
+    glVertex2i(450, 230);
+    glVertex2i(330, 230);
+    glEnd();
+    // line of window one
+    glColor3f(0.1, 0.7, 0.5);
+    glLineWidth(5);
+    glBegin(GL_LINES);
+    glVertex2i(390, 320);
+    glVertex2i(390, 230);
+    glVertex2i(330, 273);
+    glVertex2i(450, 273);
+    glEnd();
+    // window two
+    glColor3f(0.2, 0.4, 0.3);
+    glBegin(GL_POLYGON);
+    glVertex2i(530, 320);
+    glVertex2i(650, 320);
+    glVertex2i(650, 230);
+    glVertex2i(530, 230);
+    glEnd();
+    // lines of window two
+    glColor3f(0.1, 0.7, 0.5);
+    glLineWidth(5);
+    glBegin(GL_LINES);
+    glVertex2i(590, 320);
+    glVertex2i(590, 230);
+    glVertex2i(530, 273);
+    glVertex2i(650, 273);
+    glEnd();
+
+    // Entrance Path
+    glColor3f(0.3, 0.5, 0.7);
+    glLineWidth(3);
+    glBegin(GL_POLYGON);
+    glVertex2i(150, 100);
+    glVertex2i(250, 100);
+    glVertex2i(210, 0);
+    glVertex2i(40, 0);
+    glEnd();
+    // Process all OpenGL routine s as quickly as possible
+    glFlush();
+}
+int main(int argc, char ** argv)
+{
+    // Initialize GLUT
+    glutInit(&argc, argv);
+    // Set display mode
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    // Set top - left display window position.
+    glutInitWindowPosition(100, 100);
+    // Set display window width and height
+    glutInitWindowSize(800, 600);
+    // Create display window with the given title
+    glutCreateWindow("2D House in OpenGL ");
+    // Execute initialization procedure
+    init();
+    // Send graphics to display window
+    glutDisplayFunc(home);
+    // Display everything and wait.
+    glutMainLoop();
+}
+
+##################### House ####################
+
+
+#include<windows.h>
+#include <GL/glut.h>
+#include<math.h>
+#define PI 3.14159265358979323846
+
+
+
+//#include <GL/glut.h>
+void myInit(void)
+{
+glClearColor(1.0, 1.0, 1.0, 1.0); // set the bg color to a bright black
+glMatrixMode(GL_PROJECTION); // set up appropriate matrices-
+//glLoadIdentity(); // to be explained
+//gluOrtho2D(0.0, 640.0, 0.0, 480.0);
+gluOrtho2D(-1.0, 1.0, -1.0, 1.0 );
+
+}
+
+float angle=30.f;
+
+void myDisplay(void)
+{
+glClear(GL_COLOR_BUFFER_BIT); // clear the screenn
+glLineWidth(4.0);
+
+//1st
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(56.0f/255.0f, 41.0f/255.0f, 51.0f/255.0f);
+glBegin(GL_TRIANGLES);
+
+glVertex2f(.0f,.7f);     // Define vertices in counter-clockwise (CCW) order
+glVertex2f(-.8f,.29f);     //  so that the normal (front-face) is facing you
+glVertex2f(.8f,.29f);
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+//2nd
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(227.0f/255.0f, 223.0f/255.0f, 200.0f/255.0f);
+glBegin(GL_TRIANGLES);
+
+glVertex2f(.0f,.65f);     // Define vertices in counter-clockwise (CCW) order
+glVertex2f(-.7f,.32f);     //  so that the normal (front-face) is facing you
+glVertex2f(.7f,.32f);
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+//home body
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(227.0f/255.0f, 223.0f/255.0f, 200.0f/255.0f);
+glBegin(GL_QUADS);
+
+glVertex2f(-.7f,.29f);
+glVertex2f(-.7f,-.5f);
+glVertex2f(.7f,-.5f);
+glVertex2f(.7f,.29f);
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+//home body bottom line
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(56.0f/255.0f, 41.0f/255.0f, 51.0f/255.0f);
+glBegin(GL_LINES);
+
+glVertex2f(-.9f,-.5f);     //  so that the normal (front-face) is facing you
+glVertex2f(.9f,-.5f);
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+//window
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(56.0f/255.0f, 41.0f/255.0f, 51.0f/255.0f);
+glBegin(GL_QUADS);
+
+glVertex2f(-.6f,.2f);
+glVertex2f(-.6f,-.2f);
+glVertex2f(-.4f,-.2f);
+glVertex2f(-.4f,.2f);
+
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+//window 2 with water color
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(203.0f/255.0f, 234.0f/255.0f, 237.0f/255.0f);
+glBegin(GL_QUADS);
+
+glVertex2f(-.59f,.18f);
+glVertex2f(-.59f,-.18f);
+glVertex2f(-.41f,-.18f);
+glVertex2f(-.41f,.18f);
+
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+//line in window horizontal
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(56.0f/255.0f, 41.0f/255.0f, 51.0f/255.0f);
+glBegin(GL_LINES);
+
+glVertex2f(-.41f,-.07f);
+glVertex2f(-.60f,-.07f);
+
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+//line in window vertically
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(56.0f/255.0f, 41.0f/255.0f, 51.0f/255.0f);
+glBegin(GL_LINES);
+
+glVertex2f(-.50f,.18f);
+glVertex2f(-.50f,-.18f);
+
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+//door
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(56.0f/255.0f, 41.0f/255.0f, 51.0f/255.0f);
+glBegin(GL_QUADS);
+
+glVertex2f(-.25f,.18f);
+glVertex2f(-.25f,-.5f);
+glVertex2f(-.06f,-.5f);
+glVertex2f(-.06f,.18f);
+
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+
+glPushMatrix(); //when you apply several transformations (translations & rotations) this matrix changes too.
+glColor3f(228.0f/255.0f, 227.0f/255.0f, 227.0f/255.0f);
+glBegin(GL_QUADS);
+
+glVertex2f(.0f,.18f);
+glVertex2f(.0f,-.5f);
+glVertex2f(.65f,-.5f);
+glVertex2f(.65f,.18f);
+
+glPopMatrix();
+
+glEnd();
+glFlush();
+
+
+
+}
+
+int main(int iArgc, char** cppArgv)
+{
+glutInit(&iArgc, cppArgv); // initialize the toolkit
+glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB); // set the display mode
+glutInitWindowSize(640,480); // set window size
+glutInitWindowPosition(100, 150); // set window upper left corner position on screen
+glutCreateWindow("House"); // open the screen window (Title: My First Attempt)
+// register the callback functions
+glutDisplayFunc(myDisplay);
+myInit(); // additional initializations as necessary
+glutMainLoop(); // go into a endless loop
+return 0;
+}
+
+################################ House 2 ##############################
+
+
+#include <stdio.h>
+#include <GL/gl.h>
+#include <GL/glut.h>
+#include<string.h>
+#include<iostream>
+void home()
+{
+    glBegin(GL_POLYGON);
+    glColor3ub(244,164,96);
+    glVertex2f(-0.3f,0.0f);
+    glVertex2f(0.1f,0.0f);
+    glVertex2f(0.02f,0.3f);
+    glVertex2f(-0.38f,0.3f);
+    glEnd();
+
+   glBegin(GL_POLYGON);
+    glColor3ub(244,164,96);
+    glVertex2f(-0.29f,0.0f);
+    glVertex2f(0.07f,0.0f);
+    glVertex2f(0.07f,-0.4f);
+    glVertex2f(-0.29f,-0.4f);
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    glColor3ub(244,164,96);
+    glVertex2f(-0.38f,0.3f);
+    glVertex2f(-0.43f,0.0f);
+    glVertex2f(-0.41f,0.0f);
+    glVertex2f(-0.41f,-0.35f);
+    glVertex2f(-0.29f,-0.4f);
+    glVertex2f(0.07f,-0.4f);
+
+    glEnd();
+
+     glBegin(GL_LINES);
+
+    glColor3ub(0,0,0);
+    glVertex2f(-0.3f,0.0f);
+    glVertex2f(0.1f,0.0f);
+
+    glColor3ub(0,0,0);
+    glVertex2f(-0.29f,0.0f);
+    glVertex2f(-0.29f,-0.4f);
+
+    glColor3ub(0,0,0);
+     glVertex2f(0.07f,-0.4f);
+    glVertex2f(-0.29f,-0.4f);
+
+     glColor3ub(0,0,0);
+     glVertex2f(0.07f,-0.4f);
+    glVertex2f(0.07f,-0.0f);
+
+    glColor3ub(0,0,0);
+    glVertex2f(-0.3f,0.0f);
+    glVertex2f(-0.38f,0.3f);
+
+    glColor3ub(0,0,0);
+    glVertex2f(-0.38f,0.3f);
+    glVertex2f(-0.43f,0.0f);
+
+     glColor3ub(0,0,0);
+    glVertex2f(-0.37f,0.245f);
+    glVertex2f(-0.41f,0.0f);
+
+     glColor3ub(0,0,0);
+     glVertex2f(-0.41f,0.0f);
+    glVertex2f(-0.41f,-0.35f);
+
+    glColor3ub(0,0,0);
+     glVertex2f(-0.41f,-0.35f);
+    glVertex2f(-0.29f,-0.4f);
+
+    glColor3ub(0,0,0);
+   glVertex2f(0.1f,0.0f);
+    glVertex2f(0.02f,0.3f);
+
+     glColor3ub(0,0,0);
+  glVertex2f(0.02f,0.3f);
+    glVertex2f(-0.38f,0.3f);
+
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    glColor3ub(100,50,40);
+    glVertex2f(-0.15f,-0.1f);
+    glVertex2f(-0.02f,-0.1f);
+    glVertex2f(-0.02f,-0.4f);
+    glVertex2f(-0.15f,-0.4f);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3ub(200,14,50);
+    glVertex2f(-0.24f,-0.05f);
+    glVertex2f(-0.18f,-0.05f);
+    glVertex2f(-0.18f,-0.15f);
+    glVertex2f(-0.24f,-0.15f);
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    glColor3ub(100,50,40);
+     glVertex2f(-0.31f,0.0f);
+    glVertex2f(-0.38f,0.02f);
+    glVertex2f(-0.38f,-0.37f);
+    glVertex2f(-0.31f,-0.4f);
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    glColor3ub(200,14,15);
+    glVertex2f(0.06f,-0.05f);
+    glVertex2f(-0.0f,-0.05f);
+    glVertex2f(-0.0f,-0.15f);
+    glVertex2f(0.06f,-0.15f);
+    glEnd();
+}
+void fullsky()
+{
+     glLoadIdentity();
+    glBegin(GL_POLYGON);
+	glColor3ub(20, 40, 60);
+	glVertex2f(-1.0f, 1.0f);
+	glVertex2f(1.0f, 1.0f);
+	glVertex2f(1.0f, 0.1f);
+	glVertex2f(-1.0f, 0.1f);
+
+	glEnd();
+}
+
+
+void display()
+{
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+     fullsky();
+      home();
+    glFlush();
+}
+
+
+
+int main(int argc, char** argv)
+{
+    glutInit(&argc, argv);
+    glutInitWindowSize(1250, 650);
+    glutInitWindowPosition(5, 5);
+    glutCreateWindow("DREAM HOME");
+    glutDisplayFunc(display);
+    glutMainLoop();
+    return 0;
+}
+
+###################################### Just shape #####################
+
+
+#include <stdio.h>
+#include <GL/gl.h>
+#include <GL/glut.h>
+void myDisplay(void)
+{
+    glClear (GL_COLOR_BUFFER_BIT);
+    glColor3f (255.0, 0.0, 0.0);
+    glPointSize(4.0);
+    glBegin(GL_POLYGON);
+    glVertex2i(15, 15);
+    glVertex2i(620, 15);
+    glVertex2i(620, 15);
+    glVertex2i(620, 500);
+    glVertex2i(560, 500);
+    glVertex2i(80, 4000);
+    glVertex2i(15, 320);
+    glVertex2i(15, 180);
+    glEnd();
+
+    glColor3f (255.0, 255.0, 0.0);
+    glPointSize(4.0);
+    glBegin(GL_POLYGON);
+    glVertex2i(270, 380);
+    glVertex2i(270, 100);
+    glVertex2i(370, 100);
+    glVertex2i(370, 380);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glVertex2i(270, 100);
+    glVertex2i(270, 80);
+    glVertex2i(290, 80);
+    glVertex2i(290, 60);
+    glVertex2i(360, 60);
+    glVertex2i(360, 80);
+    glVertex2i(370, 80);
+    glVertex2i(370, 100);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glVertex2i(370, 140);
+    glVertex2i(460, 140);
+    glVertex2i(460, 320);
+    glVertex2i(400, 320);
+    glVertex2i(400, 340);
+    glVertex2i(370, 340);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glVertex2i(460, 120);
+    glVertex2i(549, 120);
+    glVertex2i(600, 180);
+    glVertex2i(600, 300);
+    glVertex2i(585, 320);
+    glVertex2i(460, 320);
+    glEnd();
+
+   glBegin(GL_POLYGON);
+    glVertex2i(270, 140);
+    glVertex2i(270, 320);
+    glVertex2i(55, 320);
+    glVertex2i(40, 300);
+    glVertex2i(40, 180);
+    glVertex2i(65, 140);
+    //glVertex2i(500, 60);
+    glEnd();
+
+
+    glFlush ();
+    }
+    void myInit (void)
+    {
+        glClearColor(1.0, 0.0, 0.0, 0.0);
+        glColor3f(0.0f, 0.0f, 0.0f);
+        glMatrixMode(GL_PROJECTION);
+        glLoadIdentity();
+        gluOrtho2D(0.0, 640.0, 0.0, 480.0);
+    }
+    int main(int argc, char** argv)
+    {
+        glutInit(&argc, argv);
+        glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+        glutInitWindowSize (640, 480);
+        glutInitWindowPosition (100, 150);
+        glutCreateWindow ("my first attempt");
+        glutDisplayFunc(myDisplay);
+        myInit ();
+        glutMainLoop();
+    }
+
+############################# House ###########################
+
+
+#include <windows.h>
+#include <GL\glut.h>
+
+void myInit (void)
+
+{
+
+     glClearColor(0.0,0.0,0.0,0.0);
+
+
+
+     glMatrixMode(GL_PROJECTION);
+
+     glLoadIdentity();
+
+     gluOrtho2D(0.0, 500.0, 0.0, 400.0);
+
+}
+
+
+void myDisplay(void)
+
+{
+
+     glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(0.5f,0.5f,0.5f) ;
+
+     glPointSize(4.0);
+
+     glBegin(GL_POLYGON);
+//bottom
+
+          glVertex2i (20, 20);
+          glVertex2i (320, 20);
+
+          //top
+          glVertex2i (20, 200);
+          glVertex2i (320, 200);
+        //left
+          glVertex2i (20, 200);
+          glVertex2i (20, 20);
+        //right
+          glVertex2i (320, 200);
+          glVertex2i (320, 20);
+
+          //glVertex2i (10, -50);
+
+    glEnd();
+
+
+//Left Window
+
+ glColor3f(1.0f,0.0f,0.0f) ;
+glPointSize(4.0);
+ glRectf(30,30,100,100);
+
+ //Right Window
+ glColor3f(1.0f,0.0f,0.0f) ;
+glBegin(GL_POLYGON);
+//bottom
+
+        glVertex2i (200,30);
+          glVertex2i (200, 100);
+
+//top
+          glVertex2i (200, 100);
+          glVertex2i (300, 100);
+
+//left
+          glVertex2i (300, 100);
+          glVertex2i (300, 30);
+ //right
+         glVertex2i (300, 30);
+          glVertex2i (200, 30);
+
+          //glVertex2i (10, -50);
+
+    glEnd();
+
+
+//door
+glColor3f(0.0f,0.0f,1.0f) ;
+glBegin(GL_POLYGON);
+//left
+
+        glVertex2i (120,30);
+          glVertex2i (120, 100);
+
+//top
+          glVertex2i (120, 100);
+          glVertex2i (170, 100);
+
+//right
+          glVertex2i (170, 100);
+          glVertex2i (170, 30);
+
+ //bottom
+         glVertex2i (120, 30);
+          glVertex2i (170, 30);
+
+          //glVertex2i (10, -50);
+
+    glEnd();
+
+    //Triangle
+
+    glColor3f(0.0f,1.0f,0.0f) ;
+    glBegin(GL_POLYGON);
+//bottom
+
+          glVertex2i (20, 200);
+          glVertex2i (320, 200);
+
+          //top
+          glVertex2i (200, 310);
+          glVertex2i (320, 200);
+
+        //left
+          glVertex2i (20, 200);
+          glVertex2i (200, 310);
+
+
+          //glVertex2i (10, -50);
+
+    glEnd();
+
+
+
+
+     glFlush();
+
+}
+int main (int argc, char **argv)
+{
+
+     glutInit (&argc, argv);
+     glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
+
+     glutInitWindowSize (640, 480);
+
+     glutInitWindowPosition (10, 10);
+
+     glutCreateWindow ("My first OpenGL program!");
+
+     glutDisplayFunc (myDisplay);
+     myInit();
+     glutMainLoop();
+     return 0;
+}

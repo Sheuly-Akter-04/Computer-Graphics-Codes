@@ -1,0 +1,1007 @@
+#include <GL/gl.h>
+#include <GL/glut.h>
+#include <math.h>
+//#include <stdio.h>
+#include <iostream>
+#include <stdlib.h>
+//#include <cmath>
+//#include <iomanip>
+#include <windows.h>
+
+
+
+void building(){
+    glBegin(GL_QUADS); //building 1
+glColor3ub(26, 125, 156);
+glVertex2f(-1.0,0.50);
+glVertex2f(-1.0,-0.05);
+glVertex2f(-0.85,-0.05);
+glVertex2f(-0.85,0.50);
+glEnd();
+
+glBegin(GL_QUADS); //building 2
+glColor3ub(171, 128, 116);
+glVertex2f(-0.95,0.40);
+glVertex2f(-0.95,-0.05);
+glVertex2f(-0.83,-0.05);
+glVertex2f(-0.83,0.40);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.36);
+glVertex2f(-0.94,0.38);
+glVertex2f(-0.83,0.38);
+glVertex2f(-0.83,0.36);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.34);
+glVertex2f(-0.94,0.32);
+glVertex2f(-0.83,0.32);
+glVertex2f(-0.83,0.34);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.30);
+glVertex2f(-0.94,0.28);
+glVertex2f(-0.83,0.28);
+glVertex2f(-0.83,0.30);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.26);
+glVertex2f(-0.94,0.24);
+glVertex2f(-0.83,0.24);
+glVertex2f(-0.83,0.26);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.22);
+glVertex2f(-0.94,0.20);
+glVertex2f(-0.83,0.20);
+glVertex2f(-0.83,0.22);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.18);
+glVertex2f(-0.94,0.16);
+glVertex2f(-0.83,0.16);
+glVertex2f(-0.83,0.18);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.14);
+glVertex2f(-0.94,0.12);
+glVertex2f(-0.83,0.12);
+glVertex2f(-0.83,0.14);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.10);
+glVertex2f(-0.94,0.08);
+glVertex2f(-0.83,0.08);
+glVertex2f(-0.83,0.10);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.06);
+glVertex2f(-0.94,0.04);
+glVertex2f(-0.83,0.04);
+glVertex2f(-0.83,0.06);
+glEnd();
+
+glBegin(GL_QUADS); //building 2 glass
+glColor3ub(33, 83, 92);
+glVertex2f(-0.94,0.02);
+glVertex2f(-0.94,0.00);
+glVertex2f(-0.83,0.00);
+glVertex2f(-0.83,0.02);
+glEnd();
+
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(150, 100, 70);
+glVertex2f(-0.58,0.79);
+glVertex2f(-0.58,-0.05);
+glVertex2f(-0.48,-0.05);
+glVertex2f(-0.48,0.79);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.74);
+glVertex2f(-0.49,0.72);
+glVertex2f(-0.50,0.72);
+glVertex2f(-0.50,0.74);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.68);
+glVertex2f(-0.49,0.66);
+glVertex2f(-0.50,0.66);
+glVertex2f(-0.50,0.68);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.62);
+glVertex2f(-0.49,0.60);
+glVertex2f(-0.50,0.60);
+glVertex2f(-0.50,0.62);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.56);
+glVertex2f(-0.49,0.54);
+glVertex2f(-0.50,0.54);
+glVertex2f(-0.50,0.56);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.50);
+glVertex2f(-0.49,0.48);
+glVertex2f(-0.50,0.48);
+glVertex2f(-0.50,0.50);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.44);
+glVertex2f(-0.49,0.42);
+glVertex2f(-0.50,0.42);
+glVertex2f(-0.50,0.44);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.38);
+glVertex2f(-0.49,0.36);
+glVertex2f(-0.50,0.36);
+glVertex2f(-0.50,0.38);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.32);
+glVertex2f(-0.49,0.30);
+glVertex2f(-0.50,0.30);
+glVertex2f(-0.50,0.32);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.26);
+glVertex2f(-0.49,0.24);
+glVertex2f(-0.50,0.24);
+glVertex2f(-0.50,0.26);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.20);
+glVertex2f(-0.49,0.18);
+glVertex2f(-0.50,0.18);
+glVertex2f(-0.50,0.20);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.14);
+glVertex2f(-0.49,0.12);
+glVertex2f(-0.50,0.12);
+glVertex2f(-0.50,0.14);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.08);
+glVertex2f(-0.49,0.06);
+glVertex2f(-0.50,0.06);
+glVertex2f(-0.50,0.08);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.49,0.02);
+glVertex2f(-0.49,0.00);
+glVertex2f(-0.50,0.00);
+glVertex2f(-0.50,0.02);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.54,0.74);
+glVertex2f(-0.54,0.72);
+glVertex2f(-0.55,0.72);
+glVertex2f(-0.55,0.74);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.54,0.68);
+glVertex2f(-0.54,0.66);
+glVertex2f(-0.55,0.66);
+glVertex2f(-0.55,0.68);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 roof 1
+glColor3ub(246, 247, 223);
+glVertex2f(-0.58,0.79);
+glVertex2f(-0.58,0.77);
+glVertex2f(-0.15,0.77);
+glVertex2f(-0.15,0.79);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 roof 2
+glColor3ub(246, 247, 223);
+glVertex2f(-0.38,0.87);
+glVertex2f(-0.38,0.85);
+glVertex2f(-0.24,0.85);
+glVertex2f(-0.24,0.87);
+glEnd();
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(13, 72, 122);
+glVertex2f(-0.48,0.77);
+glVertex2f(-0.48,-0.05);
+glVertex2f(-0.47,-0.05);
+glVertex2f(-0.47,0.77);
+glEnd();
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(150, 100, 70);
+glVertex2f(-0.47,0.75);
+glVertex2f(-0.47,-0.05);
+glVertex2f(-0.40,-0.05);
+glVertex2f(-0.40,0.75);
+glEnd();
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(13, 72, 122);
+glVertex2f(-0.40,0.77);
+glVertex2f(-0.40,-0.05);
+glVertex2f(-0.37,-0.05);
+glVertex2f(-0.37,0.77);
+glEnd();
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(150, 100, 70);
+glVertex2f(-0.37,0.85);
+glVertex2f(-0.37,-0.05);
+glVertex2f(-0.25,-0.05);
+glVertex2f(-0.25,0.85);
+glEnd();
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(13, 72, 122);
+glVertex2f(-0.25,0.77);
+glVertex2f(-0.25,-0.05);
+glVertex2f(-0.22,-0.05);
+glVertex2f(-0.22,0.77);
+glEnd();
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(19, 166, 173);
+glVertex2f(-0.22,0.75);
+glVertex2f(-0.22,-0.05);
+glVertex2f(-0.20,-0.05);
+glVertex2f(-0.20,0.75);
+glEnd();
+
+glBegin(GL_QUADS); //building 4
+glColor3ub(150, 100, 70);
+glVertex2f(-0.20,0.77);
+glVertex2f(-0.20,-0.05);
+glVertex2f(-0.15,-0.05);
+glVertex2f(-0.15,0.77);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.72);
+glVertex2f(-0.17,0.70);
+glVertex2f(-0.18,0.70);
+glVertex2f(-0.18,0.72);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.66);
+glVertex2f(-0.17,0.64);
+glVertex2f(-0.18,0.64);
+glVertex2f(-0.18,0.66);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.60);
+glVertex2f(-0.17,0.58);
+glVertex2f(-0.18,0.58);
+glVertex2f(-0.18,0.60);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.54);
+glVertex2f(-0.17,0.52);
+glVertex2f(-0.18,0.52);
+glVertex2f(-0.18,0.54);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.48);
+glVertex2f(-0.17,0.46);
+glVertex2f(-0.18,0.46);
+glVertex2f(-0.18,0.48);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.42);
+glVertex2f(-0.17,0.40);
+glVertex2f(-0.18,0.40);
+glVertex2f(-0.18,0.42);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.36);
+glVertex2f(-0.17,0.34);
+glVertex2f(-0.18,0.34);
+glVertex2f(-0.18,0.36);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.30);
+glVertex2f(-0.17,0.28);
+glVertex2f(-0.18,0.28);
+glVertex2f(-0.18,0.30);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.24);
+glVertex2f(-0.17,0.22);
+glVertex2f(-0.18,0.22);
+glVertex2f(-0.18,0.24);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.18);
+glVertex2f(-0.17,0.16);
+glVertex2f(-0.18,0.16);
+glVertex2f(-0.18,0.18);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.12);
+glVertex2f(-0.17,0.10);
+glVertex2f(-0.18,0.10);
+glVertex2f(-0.18,0.12);
+glEnd();
+
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.06);
+glVertex2f(-0.17,0.04);
+glVertex2f(-0.18,0.04);
+glVertex2f(-0.18,0.06);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.17,0.00);
+glVertex2f(-0.17,-0.02);
+glVertex2f(-0.18,-0.02);
+glVertex2f(-0.18,0.00);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.66);
+glVertex2f(-0.44,0.64);
+glVertex2f(-0.45,0.64);
+glVertex2f(-0.45,0.66);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.72);
+glVertex2f(-0.44,0.70);
+glVertex2f(-0.45,0.70);
+glVertex2f(-0.45,0.72);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.60);
+glVertex2f(-0.44,0.58);
+glVertex2f(-0.45,0.58);
+glVertex2f(-0.45,0.60);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.54);
+glVertex2f(-0.44,0.52);
+glVertex2f(-0.45,0.52);
+glVertex2f(-0.45,0.54);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.48);
+glVertex2f(-0.44,0.46);
+glVertex2f(-0.45,0.46);
+glVertex2f(-0.45,0.48);
+glEnd();
+
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.42);
+glVertex2f(-0.44,0.40);
+glVertex2f(-0.45,0.40);
+glVertex2f(-0.45,0.42);
+glEnd();
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.36);
+glVertex2f(-0.44,0.34);
+glVertex2f(-0.45,0.34);
+glVertex2f(-0.45,0.36);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.30);
+glVertex2f(-0.44,0.28);
+glVertex2f(-0.45,0.28);
+glVertex2f(-0.45,0.30);
+glEnd();
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.24);
+glVertex2f(-0.44,0.22);
+glVertex2f(-0.45,0.22);
+glVertex2f(-0.45,0.24);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.18);
+glVertex2f(-0.44,0.16);
+glVertex2f(-0.45,0.16);
+glVertex2f(-0.45,0.18);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.12);
+glVertex2f(-0.44,0.10);
+glVertex2f(-0.45,0.10);
+glVertex2f(-0.45,0.12);
+glEnd();
+
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.06);
+glVertex2f(-0.44,0.04);
+glVertex2f(-0.45,0.04);
+glVertex2f(-0.45,0.06);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.44,0.00);
+glVertex2f(-0.44,-0.02);
+glVertex2f(-0.45,-0.02);
+glVertex2f(-0.45,0.00);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.83);
+glVertex2f(-0.34,0.81);
+glVertex2f(-0.25,0.81);
+glVertex2f(-0.25,0.83);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.79);
+glVertex2f(-0.34,0.77);
+glVertex2f(-0.25,0.77);
+glVertex2f(-0.25,0.79);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.75);
+glVertex2f(-0.34,0.73);
+glVertex2f(-0.25,0.73);
+glVertex2f(-0.25,0.75);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.71);
+glVertex2f(-0.34,0.69);
+glVertex2f(-0.25,0.69);
+glVertex2f(-0.25,0.71);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.67);
+glVertex2f(-0.34,0.65);
+glVertex2f(-0.25,0.65);
+glVertex2f(-0.25,0.67);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.63);
+glVertex2f(-0.34,0.61);
+glVertex2f(-0.25,0.61);
+glVertex2f(-0.25,0.63);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.59);
+glVertex2f(-0.34,0.57);
+glVertex2f(-0.25,0.57);
+glVertex2f(-0.25,0.59);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.55);
+glVertex2f(-0.34,0.53);
+glVertex2f(-0.25,0.53);
+glVertex2f(-0.25,0.55);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.51);
+glVertex2f(-0.34,0.49);
+glVertex2f(-0.25,0.49);
+glVertex2f(-0.25,0.51);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.47);
+glVertex2f(-0.34,0.45);
+glVertex2f(-0.25,0.45);
+glVertex2f(-0.25,0.47);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.43);
+glVertex2f(-0.34,0.41);
+glVertex2f(-0.25,0.41);
+glVertex2f(-0.25,0.43);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.39);
+glVertex2f(-0.34,0.37);
+glVertex2f(-0.25,0.37);
+glVertex2f(-0.25,0.39);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.35);
+glVertex2f(-0.34,0.33);
+glVertex2f(-0.25,0.33);
+glVertex2f(-0.25,0.35);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.31);
+glVertex2f(-0.34,0.29);
+glVertex2f(-0.25,0.29);
+glVertex2f(-0.25,0.31);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.27);
+glVertex2f(-0.34,0.25);
+glVertex2f(-0.25,0.25);
+glVertex2f(-0.25,0.27);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.23);
+glVertex2f(-0.34,0.21);
+glVertex2f(-0.25,0.21);
+glVertex2f(-0.25,0.23);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.19);
+glVertex2f(-0.34,0.17);
+glVertex2f(-0.25,.17);
+glVertex2f(-0.25,0.19);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.15);
+glVertex2f(-0.34,0.13);
+glVertex2f(-0.25,0.13);
+glVertex2f(-0.25,0.15);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.11);
+glVertex2f(-0.34,0.09);
+glVertex2f(-0.25,0.09);
+glVertex2f(-0.25,0.11);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.07);
+glVertex2f(-0.34,0.05);
+glVertex2f(-0.25,0.05);
+glVertex2f(-0.25,0.07);
+glEnd();
+
+glBegin(GL_QUADS); //building 4 glass
+glColor3ub(26, 125, 156);
+glVertex2f(-0.34,0.03);
+glVertex2f(-0.34,0.01);
+glVertex2f(-0.25,0.01);
+glVertex2f(-0.25,0.03);
+glEnd();
+
+glBegin(GL_QUADS); //building 3
+glColor3ub(26, 125, 156);
+glVertex2f(-0.83,0.62);
+glVertex2f(-0.83,-0.05);
+glVertex2f(-0.75,-0.05);
+glVertex2f(-0.75,0.62);
+glEnd();
+
+glBegin(GL_QUADS); //building 3
+glColor3ub(33,83, 92);
+glVertex2f(-0.75,0.58);
+glVertex2f(-0.75,-0.05);
+glVertex2f(-0.65,-0.05);
+glVertex2f(-0.65,.58);
+glEnd();
+
+glBegin(GL_QUADS); //building 3
+glColor3ub(246, 247, 223);
+glVertex2f(-0.65,0.58);
+glVertex2f(-0.65,-0.05);
+glVertex2f(-0.63,-0.05);
+glVertex2f(-0.63,0.58);
+glEnd();
+
+glBegin(GL_QUADS); //building 3
+glColor3ub(33, 83, 92);
+glVertex2f(-0.63,0.58);
+glVertex2f(-0.63,-0.05);
+glVertex2f(-0.53,-0.05);
+glVertex2f(-0.53,0.58);
+glEnd();
+
+glBegin(GL_QUADS); //building 3
+glColor3ub(246, 247, 223);
+glVertex2f(-0.53,0.58);
+glVertex2f(-0.53,-0.05);
+glVertex2f(-0.51,-0.05);
+glVertex2f(-0.51,0.58);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 roof
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.60);
+glVertex2f(-0.75,0.58);
+glVertex2f(-0.51,0.58);
+glVertex2f(-0.51,0.60);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 roof 2
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.64);
+glVertex2f(-0.75,0.55);
+glVertex2f(-0.51,0.55);
+glVertex2f(-0.51,0.64);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.535);
+glVertex2f(-0.75,0.530);
+glVertex2f(-0.51,0.530);
+glVertex2f(-0.51,0.535);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.515);
+glVertex2f(-0.75,0.510);
+glVertex2f(-0.51,0.510);
+glVertex2f(-0.51,0.515);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.495);
+glVertex2f(-0.75,0.490);
+glVertex2f(-0.51,0.490);
+glVertex2f(-0.51,0.495);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.475);
+glVertex2f(-0.75,0.470);
+glVertex2f(-0.51,0.470);
+glVertex2f(-0.51,0.475);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.455);
+glVertex2f(-0.75,0.450);
+glVertex2f(-0.51,0.450);
+glVertex2f(-0.51,0.455);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.435);
+glVertex2f(-0.75,0.430);
+glVertex2f(-0.51,0.430);
+glVertex2f(-0.51,0.435);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.415);
+glVertex2f(-0.75,0.410);
+glVertex2f(-0.51,0.410);
+glVertex2f(-0.51,0.415);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.395);
+glVertex2f(-0.75,0.390);
+glVertex2f(-0.51,0.390);
+glVertex2f(-0.51,0.395);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.375);
+glVertex2f(-0.75,0.370);
+glVertex2f(-0.51,0.370);
+glVertex2f(-0.51,0.375);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.355);
+glVertex2f(-0.75,0.350);
+glVertex2f(-0.51,0.350);
+glVertex2f(-0.51,0.355);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.335);
+glVertex2f(-0.75,0.330);
+glVertex2f(-0.51,0.330);
+glVertex2f(-0.51,0.335);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.315);
+glVertex2f(-0.75,0.310);
+glVertex2f(-0.51,0.310);
+glVertex2f(-0.51,0.315);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.295);
+glVertex2f(-0.75,0.290);
+glVertex2f(-0.51,0.290);
+glVertex2f(-0.51,0.295);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.275);
+glVertex2f(-0.75,0.270);
+glVertex2f(-0.51,0.270);
+glVertex2f(-0.51,0.275);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.255);
+glVertex2f(-0.75,0.250);
+glVertex2f(-0.51,0.250);
+glVertex2f(-0.51,0.255);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.235);
+glVertex2f(-0.75,0.230);
+glVertex2f(-0.51,0.230);
+glVertex2f(-0.51,0.235);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.215);
+glVertex2f(-0.75,0.210);
+glVertex2f(-0.51,0.210);
+glVertex2f(-0.51,0.215);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.195);
+glVertex2f(-0.75,0.190);
+glVertex2f(-0.51,0.190);
+glVertex2f(-0.51,0.195);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.175);
+glVertex2f(-0.75,0.170);
+glVertex2f(-0.51,0.170);
+glVertex2f(-0.51,0.175);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.155);
+glVertex2f(-0.75,0.150);
+glVertex2f(-0.51,0.150);
+glVertex2f(-0.51,0.155);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.135);
+glVertex2f(-0.75,0.130);
+glVertex2f(-0.51,0.130);
+glVertex2f(-0.51,0.135);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.115);
+glVertex2f(-0.75,0.110);
+glVertex2f(-0.51,0.110);
+glVertex2f(-0.51,0.115);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.095);
+glVertex2f(-0.75,0.090);
+glVertex2f(-0.51,0.090);
+glVertex2f(-0.51,0.095);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.075);
+glVertex2f(-0.75,0.070);
+glVertex2f(-0.51,0.070);
+glVertex2f(-0.51,0.075);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.055);
+glVertex2f(-0.75,0.050);
+glVertex2f(-0.51,.050);
+glVertex2f(-0.51,0.055);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.035);
+glVertex2f(-0.75,0.030);
+glVertex2f(-0.51,0.030);
+glVertex2f(-0.51,0.035);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,0.015);
+glVertex2f(-0.75,0.010);
+glVertex2f(-0.51,0.010);
+glVertex2f(-0.51,0.015);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,-0.005);
+glVertex2f(-0.75,-0.010);
+glVertex2f(-0.51,-0.010);
+glVertex2f(-0.51,-0.005);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,-0.015);
+glVertex2f(-0.75,-0.010);
+glVertex2f(-0.51,-0.010);
+glVertex2f(-0.51,-0.015);
+glEnd();
+
+glBegin(GL_QUADS); //building 3 glass
+glColor3ub(246, 247, 223);
+glVertex2f(-0.75,-0.035);
+glVertex2f(-0.75,-0.030);
+glVertex2f(-0.51,-0.030);
+glVertex2f(-0.51,-0.035);
+glEnd();
+
+}
+
+
+void myDisplay(void){
+
+building();
+
+    glFlush();
+
+}
+
+
+int main(int argc, char** argv){
+    glutInit(&argc, argv);
+    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
+    glutInitWindowSize (1366, 768);
+    glutInitWindowPosition (0, 0);
+    glutCreateWindow ("Dhaka City");
+    glutDisplayFunc(myDisplay);
+
+    glutMainLoop();
+}
+
+

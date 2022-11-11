@@ -1,0 +1,66 @@
+****************************************
+package samplePackage ;
+
+public class SampleClass
+{
+
+	private int base ;
+
+	public void setBase(int base )
+	{
+		this.base =base ;
+	}
+	public int getBase()
+	{
+		return base ;
+	}
+
+	public void Area()
+	{
+		System.out.println("Area of the circle is : " + (3.1416*base*base )) ;
+	}
+}
+
+******************************************
+package samplePackage.subSamplePackage ;
+
+public class SubSampleClass
+{
+	private int base ;
+
+	public void setBase(int base )
+	{
+		this.base =base ;
+	}
+	public int getBase()
+	{
+		return base ;
+	}
+
+	public void Area()
+	{
+		System.out.println("Area of the square is : " + base*base ) ;
+	}
+
+}
+
+
+**********************************************
+import samplePackage.SampleClass ;
+import samplePackage.subSamplePackage.SubSampleClass ;
+
+public class Main
+{
+	public static void main(String arg[])
+	{
+		SampleClass s = new SampleClass() ;
+		s.setBase(5);
+		s.Area();
+		
+		SubSampleClass sub = new SubSampleClass() ;
+		sub.setBase(5);
+		sub.Area();
+	}
+}
+
+**********************

@@ -1,0 +1,16 @@
+Usage
+
+Option 1: Run pre-compiled JAR
+Install JRE
+Install Gstreamer
+WINDOWS Only: Add gstreamer to PATH
+Run it:
+From CLI: java -jar DumbPlayer-1.0.0-RC4.jar some-video.mp4
+Or just execute the JAR file and click the Open file button or Press Ctrl+O
+
+
+Option 2: Compile it yourself
+Follow instructions 1 through 3 from Option 1
+Clone this Repo
+Open the project in Eclipse
+Click Build and Run
